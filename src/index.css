@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font: 14px/1.4 "Urbanist", sans-serif;
+  color: #6F7487;
+  background: #fff;
+}
+
+.v-center {
+  align-items: center;
+}
+
+.v-top {
+  align-items: flex-start;
+}
+
+.relative {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  font-family: "Urbanist", sans-serif;
+  outline: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+.h-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+input,
+select {
+  outline: none;
+}
+
+a {
+  color: #158fac;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+}
+.transition {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.list-none {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Urbanist", sans-serif;
+  color:#02174C;
+}
+
+#wrapper {
+  /* width: 1440px;
+  margin: 0 auto; */
+  overflow: hidden;
+}
+.container {
+  max-width: 1239px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background: #0AF886;
+  color: #02174C;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 4px;
+  border:none;
+}
+.btn-default {
+  height:46px;
+  background: #0AF886;
+  color: #02174C;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 4px;
+  border:none;
+}
+.fancy-checkbox {
+  position: relative;
+  padding-left: 23px;
+}
+
+.fancy-checkbox:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 3px;
+  background: rgba(2, 23, 76, 0.2);
+  z-index: 1;
+}
+.fancy-check:checked + label:after {
+  background: url("./assets//checked.png") no-repeat;
+}
+
+.sucess-text {
+  text-align: center;
+  font-size: 17px;
+}
+
+.sucess-text img {
+  display: block;
+  margin: 0 auto 30px;
+}
+.sucess-text button {
+  background: #0AF886;
+  border: none;
+  color: #02174C;
+  border-radius: 4px;
+  padding: 13px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 20px 0;
+  border: 1px solid #0AF886;
+}
+.popup .buttons .default {
+  background: rgba(2, 23, 76, 0.06);
+  border: 1px solid #02174C;
+}
+
+.popup .buttons {
+  justify-content: center;
+  gap: 20px;
+}

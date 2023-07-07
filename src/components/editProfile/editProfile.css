@@ -1,0 +1,40 @@
+.edit-form .edit-col {
+    width: calc(50% - 8px);
+}
+
+.edit-form input, .edit-form textarea {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(2, 23, 76, 0.5);
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0 17px;
+    color: #222;
+}
+
+.edit-form .edit-row {
+    gap: 15px;
+    margin: 0 0 15px;
+}
+
+.edit-form textarea {
+    height: 160px;
+    resize: none;
+    padding: 15px 17px;
+}
+.edit-form .edit-row.buttons button,
+.edit-form .edit-row.buttons input[type="submit"] {
+    width: 138px;
+    font-weight: 600;
+    color:#02174C;
+    background:rgba(2, 23, 76, 0.06);
+    border:1px solid #02174C;
+    border-radius: 4px;
+}
+.edit-form .edit-row.buttons input[type="submit"]{
+    background: #02174C;
+    color:#fff;
+}
+.edit-form .edit-row.buttons{
+    justify-content: flex-end;
+}

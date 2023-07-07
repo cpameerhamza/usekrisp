@@ -1,0 +1,156 @@
+.profile-card {
+    width: 318px;
+    border: 1px solid rgba(2, 23, 76, 0.2);
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px 15px 0;
+}
+.pic label {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pic label img {
+    display: block;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 146px;
+    height: 146px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile-card .pro-address {
+    padding: 0 0 20px;
+}
+.profile-card .btns a,
+.profile-card .btns button {
+    width: 100%;
+    height: 46px;
+    background: #02174C;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: 10px;
+    line-height: 17px;
+    font-size: 15px;
+    color:#fff;
+}
+.profile-card .btns button{
+    border:1px solid #EAB851;
+    color:#EAB851;
+    background:rgba(234, 184, 81, 0.06);
+}
+.profile-card .btns .delete{
+    border:1px solid #EA5167;
+    color:#EA5167;
+    background:rgba(234, 81, 103, 0.06);
+}
+.profile-card .btns li {
+    margin: 0 0 10px;
+}
+
+.account-area {
+    padding: 50px 0 0;
+}
+
+.tabset {
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+}
+
+.profile-content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.tabset button {
+    padding: 0 0 15px;
+    background: none;
+    border: none;
+    color: #6F7487;
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.tabset li {
+    margin-right: 25px;
+}
+.tabset li.active button {
+    border-color: #02174C;
+    color: #02174C;
+    font-weight: 600;
+}
+.tab-content .heading h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.tab-content .heading select {
+    padding: 0;
+    border: none;
+    appearance: none;
+    color: #6F7487;
+    font-size: 16px;
+    background: url("../../assets/dropdown-ico.png") no-repeat 100% 50%;
+    padding-right: 17px;
+}
+.tab-content .heading {
+    padding: 30px 0;
+}
+.text-tags{
+    gap:20px;
+    margin: 0 0 10px;
+}
+.tab-content .service-list h3 {
+    margin: 0 0 25px;
+}
+.service-btns li {
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.service-btns{
+    gap:15px;
+}
+.service-btns li a {
+    background: rgba(81, 184, 234, 0.06);
+    color: #2D9ACF;
+    border: 1px solid #2D9ACF;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    min-width: 138px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.service-btns li.edit a{
+    background:rgba(0, 183, 95, 0.06);
+    border-color:#00B75F;
+    color:#00B75F;
+}
+.service-btns li.delete a{
+    background:rgba(234, 81, 103, 0.06);
+    border-color:#EA5167;
+    color:#EA5167;
+}
+.tab-content .loading {
+    padding: 30px 0 60px;
+}

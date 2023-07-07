@@ -1,0 +1,31 @@
+#header {
+    padding: 25px 0;
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #header ul {
+    margin-right: 32px;
+  }
+  #header ul li {
+    margin-left: 24px;
+    position: relative;
+  }
+  #header .user{
+    width:30px;
+  }
+  #header ul .count {
+    position: absolute;
+    background: #0AF886;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    text-align: center;
+    color: #02174C;
+    font-weight: 600;
+    right: -3px;
+    top: -4px;
+    font-size: 13px;
+    line-height: 16px;
+  }

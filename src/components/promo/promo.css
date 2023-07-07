@@ -1,0 +1,13 @@
+.schedule-text .text {
+    background: #02174C;
+    width: 100%;
+    border-radius: 16px;
+    padding: 51px 44px;
+  }
+  .schedule-text .text h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 31px;
+    font-weight: 600;
+    max-width: 500px;
+  }

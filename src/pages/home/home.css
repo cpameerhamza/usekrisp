@@ -1,0 +1,188 @@
+  .benefits {
+    margin: 0 0 70px;
+  }
+  .benefits h2 {
+    margin: 0 0 27px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  .benefits .cols img {
+    width: 100%;
+    border-radius: 17px;
+    display: block;
+    height: 298px;
+    object-fit: cover;
+    margin: 0 0 16px;
+  }
+  
+  .benefits .cols strong {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color:#02174C;
+  }
+  
+  .benefits .cols {
+    gap: 16px;
+  }
+  .claim .img-holder {
+    width: 50%;
+  }
+  
+  
+  
+  
+  .benefits {
+    margin: 0 0 70px;
+  }
+  .claim {
+    margin: 0 0 120px;
+  }
+  .claim .img-holder {
+    width: 50%;
+  }
+  
+  .claim .text {
+    width: 44%;
+    padding: 37px 37px 0 0;
+  }
+  
+  .claim .text h2 {
+    margin: 0 0 23px;
+    color: #02174C;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    padding: 0 40px 0 0;
+  }
+  
+  .claim .text p {
+    margin: 0 0 27px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .claim .btn-primary {
+    margin: 13px 0 0;
+    padding: 12px 16px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .features {
+    background: #E9FFDB;
+  }
+  
+  .claim {
+    margin: 0 0 121px;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 58px;
+  }
+  
+  .features {
+    padding: 74px 0 82px;
+  }
+  
+  .features ul li {
+    width: 33.3%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .features ul li img {
+    display: block;
+    margin: 0 auto 22px;
+  }
+  
+  .features ul li strong {
+    display: block;
+    font-size: 22px;
+    margin: 0 0 16px;
+    color:#02174C;
+  }
+  
+  .features ul li p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+
+
+
+  .promo h2 {
+    margin: 0 0 25px;
+    font-size: 30px;
+  }
+
+  .promo {
+    padding: 127px 0 100px;
+}
+
+.promo p {
+    margin: 0;
+  }
+
+.promo .header {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 60px;
+}
+
+
+
+
+
+
+.promo .twocols .column:first-child {
+  width: 60%;
+  margin-right: -115px;
+}
+
+.promo .twocols .holder {
+  background: #fff;
+  border-radius: 15px;
+  width: 610px;
+  padding: 43px 97px;
+  box-shadow: 11px 12px 17px -15px #7b7b7b;
+}
+.promo .twocols .holder h3 {
+  margin: 0 0 37px;
+  font-size: 30px;
+}
+
+.promo .twocols ul li {
+  margin: 0 0 35px;
+  display: flex;
+  align-items: center;
+}
+
+.promo .twocols ul span {
+  font-weight: 700;
+  margin-right: 23px;
+  font-size: 17px;
+}
+
+.promo .twocols ul .ico {
+  background: #0AF886;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo .twocols ul .inner {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0 0 20px;
+  font-size: 17px;
+}
+.promo .twocols ul .inner strong {
+  font-size: 20px;
+  margin: 0 0 6px;
+  color:#02174C;
+}

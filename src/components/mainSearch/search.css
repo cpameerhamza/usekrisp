@@ -1,0 +1,51 @@
+.form-holder {
+    border-radius: 4px;
+    background: #fff;
+    max-width: 870px;
+    margin: -44px auto 72px;
+    padding: 20px 17px 20px 20px;
+  }
+  .form-holder select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("../../assets/search-ico.png") no-repeat 8px 50%;
+    border: 1px solid #02174C;
+    border-radius: 4px;
+    width: 347px;
+    height: 40px;
+    padding: 0 34px;
+    font-size: 14px;
+    margin-right: 8px;
+    color:#6F7487;
+  }
+  
+  .form-holder input[type="text"] {
+    background: url("../../assets/location-ico.png") no-repeat 10px 50%;
+    height: 40px;
+    border: 1px solid #02174C;
+    border-radius: 4px;
+    width: 352px;
+    margin-right: 4px;
+    padding: 0 34px;
+    color:#6F7487;
+  }
+  .form-holder input[type="submit"] {
+    background: #02174C;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    width: 115px;
+  }
+  .form-holder input[type="text"]::placeholder {
+    color:#6F7487;
+    opacity: 1;
+  }
+  
+  .form-holder input[type="text"]:-ms-input-placeholder {
+    color:#6F7487;
+  }
+  
+  .form-holder input[type="text"]::-ms-input-placeholder {
+    color:#6F7487;
+  }

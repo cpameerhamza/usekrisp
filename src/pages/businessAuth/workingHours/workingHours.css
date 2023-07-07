@@ -1,0 +1,56 @@
+.working-cols {
+    gap: 30px;
+    margin: 0 0 25px;
+}
+
+.working-col strong {
+    display: block;
+}
+
+.working-col h3 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.working-col {
+    width: calc(50% - 15px);
+}
+
+.working-col .inner-col {
+    width: 50%;
+}
+
+.working-col .inner-cols {
+    display: flex;
+    gap: 10px;
+}
+
+.working-col .inner-col strong {
+    color: #222;
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.working-col .inner-col select {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 17px 0 35px;
+    appearance: none;
+    color: #6F7487;
+    font-weight: 600;
+    background-image: url("../../../assets/time-ico.png"), url("../../../assets/dropdown-ico.png");
+    background-position: 10px 50%, 96% 50%;
+    background-repeat: no-repeat, no-repeat;
+    /* background:url("../../../assets/dropdown-ico.png") no-repeat 96% 50%; */
+}
+.submit-row input[type="submit"] {
+    background: #02174C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 500;
+}
