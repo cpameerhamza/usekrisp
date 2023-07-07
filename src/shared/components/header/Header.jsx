@@ -1,16 +1,16 @@
 import "./header.css";
-import Login from "../../pages/businessAuth/login/Login";
-// import Signup from "../../pages/businessAuth/signup/Signup";
-// import WorkingHours from "../../pages/businessAuth/workingHours/WorkingHours";
-// import ForgotPass from "../../pages/businessAuth/forgotPass/ForgotPass";
-// import NewPassword from "../../pages/businessAuth/newPassword/NewPassword";
-// import SuceessPopup from "../../components/successPopup/SuccessPopup";
+import Login from "../../../pages/businessAuth/login/Login";
+import Signup from "../../../pages/businessAuth/signup/Signup";
+import WorkingHours from "../../../pages/businessAuth/workingHours/WorkingHours";
+import ForgotPass from "../../../pages/businessAuth/forgotPass/ForgotPass";
+import NewPassword from "../../../pages/businessAuth/newPassword/NewPassword";
+import SuceessPopup from "../../components/successPopup/SuccessPopup";
 
 
-import logo from "../../assets/logo.png";
-import noticeIcon from "../../assets/notice-ico.png";
-import chatIcon from "../../assets/chat-ico.png";
-import userIcon from "../../assets/user.png";
+import logo from "../../../assets/logo.png";
+import noticeIcon from "../../../assets/notice-ico.png";
+import chatIcon from "../../../assets/chat-ico.png";
+import userIcon from "../../../assets/user.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -40,7 +40,7 @@ const Header = () => {
                 </div>
             </header>
             {
-                showAuth ? <Login /> : ""
+                showAuth ? <SuceessPopup /> : ""
             }
         </>
     )

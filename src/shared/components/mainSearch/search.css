@@ -9,7 +9,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: url("../../assets/search-ico.png") no-repeat 8px 50%;
+    background: url("../../../assets/search-ico.png") no-repeat 8px 50%;
     border: 1px solid #02174C;
     border-radius: 4px;
     width: 347px;
@@ -21,7 +21,7 @@
   }
   
   .form-holder input[type="text"] {
-    background: url("../../assets/location-ico.png") no-repeat 10px 50%;
+    background: url("../../../assets/location-ico.png") no-repeat 10px 50%;
     height: 40px;
     border: 1px solid #02174C;
     border-radius: 4px;

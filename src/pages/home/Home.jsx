@@ -1,6 +1,6 @@
 import "./home.css";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../shared/components/header/Header";
+import Footer from "../../shared/components/footer/Footer";
 import image from "../../assets/img1.png";
 import claimImage from "../../assets/img2.png";
 import promoImage from "../../assets/img3.png";
@@ -11,8 +11,8 @@ import icon4 from "../../assets/ico4.png";
 import icon5 from "../../assets/ico5.png";
 import icon6 from "../../assets/ico6.png";
 import icon7 from "../../assets/ico7.png";
-import Promo from "../../components/promo/Promo";
-import Banner from "../../components/banner/Banner";
+import Promo from "../../shared/components/promo/Promo";
+import Banner from "../../shared/components/banner/Banner";
 
 const Home = () => {
     return(

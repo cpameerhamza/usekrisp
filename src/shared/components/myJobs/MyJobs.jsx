@@ -1,7 +1,7 @@
-import image1 from "../../assets/img9.png";
-import loader from "../../assets/loader.png";
-import closeIcon from "../../assets/close-ico.png";
-import warningIcon from "../../assets/warning.png";
+import image1 from "../../../assets/img9.png";
+import loader from "../../../assets/loader.png";
+import closeIcon from "../../../assets/close-ico.png";
+import warningIcon from "../../../assets/warning.png";
 import { dateIcon, timeIcon, detailsIcon, tickMarkIcon, crossIcon, doubleTicks } from "../../utils/svgIcons";
 import { Link } from "react-router-dom";
 

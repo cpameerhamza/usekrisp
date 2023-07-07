@@ -1,11 +1,11 @@
 import "./app.css";
-import CreateRoutes from "../src/routes/Routes";
+import AuthRoute from "./shared/routes/authRoutes";
 
 const App = () => {
   return (
     <>
       <div id="wrapper">
-        <CreateRoutes />
+        <AuthRoute />
       </div>
     </>
   );

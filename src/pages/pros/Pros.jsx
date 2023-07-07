@@ -1,10 +1,10 @@
 import "./pros.css";
 import { Link } from "react-router-dom";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import Promo from "../../components/promo/Promo";
-import Banner from "../../components/banner/Banner";
-import Search from "../../components/mainSearch/Search";
+import Header from "../../shared/components/header/Header";
+import Footer from "../../shared/components/footer/Footer";
+import Promo from "../../shared/components/promo/Promo";
+import Banner from "../../shared/components/banner/Banner";
+import Search from "../../shared/components/mainSearch/Search";
 import image from "../../assets/img4.png";
 import stars from "../../assets/stars.png";
 import loader from "../../assets/loader.png";

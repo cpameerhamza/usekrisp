@@ -1,7 +1,7 @@
 #footer {
     padding: 75px 0 0;
     color:#6F7487;
-    background:url("../../assets/footer-bg.png") no-repeat;
+    background:url("../../../assets/footer-bg.png") no-repeat;
     background-size: cover;
 }
 #footer .text {

@@ -1,7 +1,7 @@
 import "./jobDetails.css";
-import Promo from "../../components/promo/Promo";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Promo from "../../shared/components/promo/Promo";
+import Header from "../../shared/components/header/Header";
+import Footer from "../../shared/components/footer/Footer";
 import dateIcon from "../../assets/date-ico.png";
 import priceIcon from "../../assets/ico8.png";
 import timeIcon from "../../assets/ico9.png";

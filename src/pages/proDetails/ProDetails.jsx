@@ -1,8 +1,8 @@
 import "./proDetails.css";
-import Promo from "../../components/promo/Promo";
+import Promo from "../../shared/components/promo/Promo";
 import { Link } from "react-router-dom";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../shared/components/header/Header";
+import Footer from "../../shared/components/footer/Footer";
 import medalIcon from "../../assets/medal.png";
 import ratingsIcon from "../../assets/stars.png";
 import priceIcon from "../../assets/ico8.png";

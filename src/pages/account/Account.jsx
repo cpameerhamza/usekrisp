@@ -1,8 +1,8 @@
 import "./account.css";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import Promo from "../../components/promo/Promo";
-import Banner from "../../components/banner/Banner";
+import Header from "../../shared/components/header/Header";
+import Footer from "../../shared/components/footer/Footer";
+import Promo from "../../shared/components/promo/Promo";
+import Banner from "../../shared/components/banner/Banner";
 import userPic from "../../assets/user.png";
 import cameraIcon from "../../assets/camera-ico.png";
 import addressIcon from "../../assets/address-ico.png";
@@ -11,10 +11,10 @@ import mobileIcon from "../../assets/mobile-ico.png";
 import image1 from "../../assets/img9.png";
 import loader from "../../assets/loader.png";
 import { Link } from "react-router-dom";
-import { pencilIcon, deactivateIcon, deleteIcon, appsIcon, dollarIcon } from "../../utils/svgIcons";
-import MyJobs from "../../components/myJobs/MyJobs";
-import EditProfile from "../../components/editProfile/EditProfile";
-import ChangePassword from "../../components/changePassword/ChangePassword";
+import { pencilIcon, deactivateIcon, deleteIcon, appsIcon, dollarIcon } from "../../shared/utils/svgIcons";
+import MyJobs from "../../shared/components/myJobs/MyJobs";
+import EditProfile from "../../shared/components/editProfile/EditProfile";
+import ChangePassword from "../../shared/components/changePassword/ChangePassword";
 
 const Account = () => {
     return(

@@ -1,6 +1,6 @@
 import "./successPopup.css";
-import closeIcon from "../../assets/close-ico.png";
-import sucessIcon from "../..//assets/sucess.png";
+import closeIcon from "../../../assets/close-ico.png";
+import sucessIcon from "../../../assets/sucess.png";
 
 const SuccessPopup = () => {
     return(
