@@ -1,0 +1,189 @@
+.added-cards {
+    gap: 20px;
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+    padding: 0 0 40px;
+    margin-bottom: 40px;
+}
+.single-card .single-card {
+    width: 287px;
+    border-radius: 8px;
+    background: red;
+}
+
+.single-card {
+    width: calc(33.3% - 14px);
+    height: 154px;
+    border-radius: 8px;
+    background: linear-gradient(106.66deg, #EF6238 -2.48%, #FFCE73 112.8%);
+    padding: 13px 15px;
+    color: #fff;
+}
+.single-card.blue{
+    background: linear-gradient(106.34deg, #C600FF 6.11%, #6C5DD3 100%);
+}
+
+.single-card h2 {
+    margin: 0 0 50px;
+    color: #fff;
+}
+
+.single-card img {
+    margin: 0 0 10px;
+}
+
+.single-card .date img {
+    margin: 0;
+    margin-left: auto;
+}
+
+.single-card .date span {
+    margin-right: 20px;
+}
+.single-card .date-holder img {
+    margin: 0;
+}
+.single-card .date-holder b {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+.single-card.new-card {
+    background: none;
+    border: 1px dashed rgba(2, 23, 76, 0.2);
+    color: #6F7487;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.remove-holder{
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+}
+.remove-holder .ico {
+    background: rgba(2, 23, 76, 0.04);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    margin-right: 15px;
+}
+
+.remove-holder strong {
+    display: block;
+    font-size: 18px;
+    color: #222;
+}
+
+.remove-holder p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.remove-holder .ico {
+    background: rgba(2, 23, 76, 0.04);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    margin-right: 15px;
+}
+
+.remove-holder strong {
+    display: block;
+    font-size: 18px;
+    color: #222;
+}
+
+.remove-holder p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.remove-account {
+    background: rgba(234, 81, 103, 0.06);
+    color: #EA5167;
+    font-weight: 600;
+    border: 1px solid #EA5167;
+    border-radius: 4px;
+    padding: 14px 13px;
+    font-size: 15px;
+}
+
+.table-holder h2 {
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+.table-holder table {
+    width: 100%;
+    table-layout: fixed;
+}
+.table-holder table td {
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+    padding: 20px 0;
+}
+
+.table-holder table img {
+    width: 44px;
+    height: 44px;
+    float: left;
+}
+
+.table-holder table td p {
+    margin: 0;
+    color: #6F7487;
+    font-size: 15px;
+}
+
+.table-holder table td strong {
+    font-size: 16px;
+    color: #02174C;
+}
+
+.table-holder table td .text {
+    margin-left: 55px;
+    overflow: hidden;
+}
+
+.table-holder table th {
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+    padding: 0 0 15px;
+}
+
+.table-holder .table-btn {
+    width: 148px;
+    background: #0AF886;
+    color: #02174C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border: none;
+}
+.table-holder .table-btn.refunded {
+    background: #6F7487;
+    color:#fff;
+}
+.table-holder .see-all {
+    padding: 30px 0;
+    text-align: center;
+}
+.table-holder .see-all button {
+    font-size: 16px;
+    color: #02174C;
+    font-weight: 600;
+    text-decoration: underline;
+    background: none;
+    padding: 0;
+    border: none;
+}

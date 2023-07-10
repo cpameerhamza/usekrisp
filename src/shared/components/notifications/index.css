@@ -1,0 +1,46 @@
+.notifications strong {
+    display: block;
+    color: #222;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.notifications p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.notifications .text {
+    width: 60%;
+}
+.notifications label {
+    width: 33px;
+    height: 19px;
+    border-radius: 30px;
+    background:#6F7487;
+    position: relative;
+}
+
+.notifications label .btn {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+}
+.notifications input[type="checkbox"]:checked +  label{
+    background: #0AF886;
+}
+.notifications input[type="checkbox"]:checked +  label .btn {
+    left: 15px;
+}
+.notifications li {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(111, 116, 135, 0.16);
+}

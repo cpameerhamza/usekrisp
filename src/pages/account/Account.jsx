@@ -15,6 +15,9 @@ import { pencilIcon, deactivateIcon, deleteIcon, appsIcon, dollarIcon } from "..
 import MyJobs from "../../shared/components/myJobs/MyJobs";
 import EditProfile from "../../shared/components/editProfile/EditProfile";
 import ChangePassword from "../../shared/components/changePassword/ChangePassword";
+import ManageCards from "../../shared/components/manageCards/Index";
+import ManageSubscription from "../../shared/components/manageSubscription/Index";
+import Notifications from "../../shared/components/notifications/Index";
 
 const Account = () => {
     return(
@@ -129,6 +132,9 @@ const Account = () => {
                                 <MyJobs />
                                 <EditProfile />
                                 <ChangePassword />
+                                <ManageCards />
+                                <ManageSubscription />
+                                <Notifications />
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import "./proDetails.css";
 import Promo from "../../shared/components/promo/Promo";
-import { Link } from "react-router-dom";
 import Header from "../../shared/components/header/Header";
 import Footer from "../../shared/components/footer/Footer";
 import medalIcon from "../../assets/medal.png";
@@ -19,7 +18,6 @@ import image4 from "../../assets/img8.png";
 import ratings from "../../assets/ratings.png";
 import closeIcon from "../../assets/close-ico.png";
 import { useState } from "react";
-
 
 const ProDetails = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -347,7 +345,6 @@ const ProDetails = () => {
                 </div>
                 : ""
             }
-            
         </>
     )
 }
