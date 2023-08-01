@@ -5,7 +5,7 @@
     height: 47px;
     font-weight: 600;
     font-size: 15px;
-    padding: 0 20px;
+    padding: 0 20px 0 45px;
 }
 
 .auth-form .field-row {
@@ -17,11 +17,16 @@
     border: none;
     font-size: 16px;
 }
-.auth-form input[type="submit"] {
+.auth-form input[type="submit"], .auth-form .submit-btn {
     background: #02174C;
     color: #fff;
     font-size: 16px;
     height: 51px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.auth-form .submit-btn{
+    width: 100%;
 }
 .auth-form .or {
     text-align: center;

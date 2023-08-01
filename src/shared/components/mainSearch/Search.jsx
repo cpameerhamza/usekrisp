@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./search.css";
 
 const Search = () => {
@@ -5,12 +6,9 @@ const Search = () => {
         <>
             <div className="form-holder">
                 <form>
-                    <select>
-                        <option>Write keyword</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                    </select>
+                    <input type="text" placeholder="Write keyword" className="keyword" />
                     <input type="text" placeholder="Zip code" />
+                    {/* <Link to="/pros">Search</Link> */}
                     <input type="submit" value="Search" />
                 </form>
             </div>

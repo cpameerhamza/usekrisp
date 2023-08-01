@@ -2,9 +2,13 @@
     border-radius: 4px;
     background: #fff;
     max-width: 870px;
-    margin: -44px auto 72px;
+    margin: -45px auto 68px;
     padding: 20px 17px 20px 20px;
   }
+  .form-holder form {
+    display: flex;
+    align-items: center;
+}
   .form-holder select {
     appearance: none;
     -webkit-appearance: none;
@@ -21,21 +25,30 @@
   }
   
   .form-holder input[type="text"] {
+    font-size: 14px;
     background: url("../../../assets/location-ico.png") no-repeat 10px 50%;
     height: 40px;
     border: 1px solid #02174C;
     border-radius: 4px;
-    width: 352px;
+    width: 42%;
     margin-right: 4px;
     padding: 0 34px;
     color:#6F7487;
   }
-  .form-holder input[type="submit"] {
+  .form-holder input.keyword {
+    background: url("../../../assets/search-ico.png") no-repeat 10px 50%;
+  }
+  .form-holder input[type="submit"]{
     background: #02174C;
     border-radius: 4px;
     color: #fff;
     height: 40px;
     width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    font-size: 14px;
   }
   .form-holder input[type="text"]::placeholder {
     color:#6F7487;
@@ -49,3 +62,24 @@
   .form-holder input[type="text"]::-ms-input-placeholder {
     color:#6F7487;
   }
+
+  @media(max-width:1000px){
+    .form-holder {
+      margin: -45px auto 30px;
+  }
+  }
+  @media(max-width:480px){
+    .form-holder form {
+      flex-direction: column;
+  }
+  
+  .form-holder form input[type="submit"] {
+      width: 100%;
+  }
+  
+  .form-holder form input[type="text"] {
+      width: 100%;
+      margin: 0 0 10px;
+  }
+  }
+

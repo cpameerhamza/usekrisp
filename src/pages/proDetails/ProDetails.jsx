@@ -17,10 +17,24 @@ import image3 from "../../assets/img7.png";
 import image4 from "../../assets/img8.png";
 import ratings from "../../assets/ratings.png";
 import closeIcon from "../../assets/close-ico.png";
+import checkedCircle from "../../assets/checked-circle.png";
+import cardNumber from "../../assets/card-number3.png";
+import cardIcon from "../../assets/card-ico.png";
+import closeButton from "../../assets/close-button.png";
+import docIcon from "../../assets/doc-ico.png";
+import deleteIcon from "../../assets/delete-ico.png";
 import { useState } from "react";
+import { locationIcon, roundPlus, streetIcon } from "../../shared/utils/svgIcons";
+import SuccessPopup from "../../shared/components/successPopup/SuccessPopup";
+import { userInputIcon, cardsIcon, passIcon, calendarIcon } from "../../shared/utils/svgIcons";
 
 const ProDetails = () => {
     const [showPopup, setShowPopup] = useState(false);
+    const [listService, setListService] = useState(false);
+    const [step1, setStep1] = useState(true);
+    const [step2, setStep2] = useState(false);
+    const [step3, setStep3] = useState(false);
+    const [step4, setStep4] = useState(false);
     return(
         <>
             <Header />
@@ -120,6 +134,7 @@ const ProDetails = () => {
                                         <span>5:00 am - 8:00 pm</span>
                                     </li>
                                 </ul>
+                                <button type="button" className="btn-primary service-btn" onClick={() => setListService(true)}>List a Service</button>
                             </div>
                         </div>
                     </div>
@@ -344,6 +359,451 @@ const ProDetails = () => {
                     </div>
                 </div>
                 : ""
+            }
+            {/* <div className="popup">
+                <div className="content small">
+                    <div className="holder relative">
+                        <form className="card-steps">
+                            <div className="step1">
+                                <h2>Subscription membership</h2>
+                                <p>Claim your profile on the website for free and then have access to a free 30 day trial where they have unlimited access to pros.</p>
+                                <div className="radios">
+                                    <input checked id="monthly" type="radio" name="group1" className="hidden" />
+                                    <label htmlFor="monthly">
+                                        <div className="left-text">
+                                            <strong>Monthly plan</strong>
+                                            <p>Billed monthly</p>
+                                        </div>
+                                        <h3>$150</h3>
+                                        <img src={checkedCircle} alt="#" className="checked hidden" />
+                                    </label>
+                                    <input id="annual" type="radio" name="group1" className="hidden" />
+                                    <label htmlFor="annual">
+                                        <div className="left-text">
+                                            <strong>Monthly plan</strong>
+                                            <p>Billed monthly</p>
+                                        </div>
+                                        <h3>$150</h3>
+                                        <img src={checkedCircle} alt="#" className="checked hidden" />
+                                    </label>
+                                </div>
+                                <div className="btn-area flex v-center">
+                                    <h2 className="plan-price">$150 <span>/month (billed monthly)</span></h2>
+                                    <button type="button">Choose Plan</button>
+                                </div>
+                            </div>
+                            <div className="step2 hidden">
+                                <h2>Select card</h2>
+                                <p>Select your credit card to proceed.</p>
+                                <div className="radios">
+                                    <input checked id="card1" type="radio" name="group2" className="hidden" />
+                                    <label htmlFor="card1">
+                                        <div className="card-ico">
+                                            <img src={cardIcon} alt="#" />
+                                        </div>
+                                        <div className="left-text">
+                                            <strong>Credit / Debit Card</strong>
+                                            <img src={cardNumber} alt="#" className="card-number" />
+                                        </div>
+                                        <img src={checkedCircle} alt="#" className="checked hidden" />
+                                    </label>
+                                    <input checked id="card2" type="radio" name="group2" className="hidden" />
+                                    <label htmlFor="card2">
+                                        <div className="card-ico">
+                                            <img src={cardIcon} alt="#" />
+                                        </div>
+                                        <div className="left-text">
+                                            <strong>Credit / Debit Card</strong>
+                                            <img src={cardNumber} alt="#" className="card-number" />
+                                        </div>
+                                        <img src={checkedCircle} alt="#" className="checked hidden" />
+                                    </label>
+                                </div>
+                                <div className="add-holder">
+                                    <button type="button">{roundPlus()} Add Card</button>
+                                    
+                                </div>
+
+                                <div className="btn-area flex v-center">
+                                    <button type="button" className="fluid">Continue</button>
+                                </div>
+                            </div>
+                            <div className="step3 hidden">
+                                <h2>Add new card</h2>
+                                <p>Enter card details below.</p>
+                                <div className="add-card">
+                                    <div className="ico-holder">
+                                        <input type="text" placeholder="Card holder name" className="card-holder-name" />
+                                        <div className="input-ico left">{userInputIcon()}</div>
+                                    </div>
+                                    <div className="ico-holder">
+                                        <input type="text" placeholder="Card number" className="card-number" />
+                                        <div className="input-ico left">{cardsIcon()}</div>
+                                    </div>
+                                    <div className="ico-holder">
+                                        <input type="text" placeholder="Expiry date" className="expiry-date" />
+                                        <div className="input-ico left">{calendarIcon()}</div>
+                                    </div>
+                                    <div className="ico-holder">
+                                        <input type="text" placeholder="CVV" className="cvv" />
+                                        <div className="input-ico left">{passIcon()}</div>
+                                    </div>
+                                </div>
+                                <div className="btn-area flex v-center">
+                                    <button type="button" className="fluid">Continue</button>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" className="btn-close" onClick={() => setShowPopup(false)}><img src={closeIcon} alt="#" /></button>
+                    </div>
+                </div>
+            </div> */}
+            {
+                listService &&
+                <div className="popup">
+                    <div className="content">
+                        <div className="holder relative">
+                            <form className="service-form relative">
+                                {
+                                    step1 && !step2 && !step3 && !step4 &&
+                                    <div className="form-step1">
+                                        <h2>List your service</h2>
+                                        <p>Describe details about your service</p>
+                                        <div className="holder">
+                                            <div className="service-row flex">
+                                                <div className="service-col ico-holder">
+                                                    <input type="text" placeholder="Zip code" />
+                                                    <div className="input-ico left">{locationIcon()}</div>
+                                                </div>
+                                                <div className="service-col ico-holder">
+                                                    <input type="text" placeholder="Street address" />
+                                                    <div className="input-ico left">{streetIcon()}</div>
+                                                </div>
+                                            </div>
+                                            <div className="service-row flex">
+                                                <div className="service-col">
+                                                    <input type="text" placeholder="Select category" />
+                                                </div>
+                                                <div className="service-col">
+                                                    <input type="text" placeholder="Service title" />
+                                                </div>
+                                            </div>
+                                            <div className="service-row">
+                                                <strong>Your hourly budget</strong>
+                                                <div className="radios-holder flex">
+                                                    <input type="radio" name="budget" id="opt1" className="hidden" />
+                                                    <label htmlFor="opt1">$10.25 / hr</label>
+                                                    <input type="radio" name="budget" id="opt2" className="hidden" />
+                                                    <label htmlFor="opt2">$12.75 / hr</label>
+                                                    <input type="radio" name="budget" id="opt3" className="hidden" />
+                                                    <label htmlFor="opt3">$15.50 / hr</label>
+                                                    <input type="radio" name="budget" id="opt4" className="hidden" />
+                                                    <label htmlFor="opt4">$18.45 / hr</label>
+                                                    <input checked type="radio" name="budget" id="opt5" className="hidden" />
+                                                    <label htmlFor="opt5">$20.85 / hr</label>
+                                                    <input type="radio" name="budget" id="opt6" className="hidden" />
+                                                    <label htmlFor="opt6">$20.45 / hr</label>
+                                                    <input type="text" placeholder="Other" className="other-field" />
+                                                </div>
+                                            </div>
+                                            <div className="service-row flex">
+                                                <div className="service-col">
+                                                    <select>
+                                                        <option>Select availability</option>
+                                                        <option>Select availability</option>
+                                                        <option>Select availability</option>
+                                                        <option>Select availability</option>
+                                                    </select>
+                                                </div>
+                                                <div className="service-col">
+                                                    <select>
+                                                        <option>Select experience</option>
+                                                        <option>Select experience</option>
+                                                        <option>Select experience</option>
+                                                        <option>Select experience</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="service-row">
+                                                <strong>Tell us the details of your service</strong>
+                                                <div className="radios-holder">
+                                                    <textarea placeholder="Describe your service"></textarea>
+                                                </div>
+                                            </div>
+                                            <div className="button-holder flex">
+                                                <button type="button" className="next ml-auto" onClick={() => {setStep1(false); setStep2(true)}}>Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                {
+                                    step2 && !step1 &&
+                                    <div className="form-step2">
+                                        <h2>Your project photos <em>(Optional)</em></h2>
+                                        <p>Add some projects to let customer hire you.</p>
+                                        <div className="holder">
+                                            <div className="boxes">
+                                                <div className="box">
+                                                    <input type="file" id="file-upload" className="hidden" />
+                                                    <label htmlFor="file-upload" className="flex v-center h-center">
+                                                        <span><em>Upload Photo</em> or just drag & drop</span>
+                                                    </label>
+                                                </div>
+                                                <div className="box">
+                                                    <textarea placeholder="Short project description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div className="file-size">
+                                                <div className="size-holder">
+                                                    <div className="progress" style={{width: "30%"}}>
+                                                        <span>30%</span>
+                                                    </div>
+                                                </div>
+                                                <div className="size-text">File size <b>12MB</b></div>
+                                            </div>
+                                            <div className="btn flex">
+                                                <button type="button" className="btn-primary ml-auto">Add Project</button>
+                                            </div>
+                                            <ul className="list-none flex selected-files">
+                                                <li>
+                                                    <img src={image1} alt="#" />
+                                                    <button type="button">
+                                                        <img src={closeButton} alt="#" />
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <img src={image1} alt="#" />
+                                                    <button type="button">
+                                                        <img src={closeButton} alt="#" />
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <img src={image1} alt="#" />
+                                                    <button type="button">
+                                                        <img src={closeButton} alt="#" />
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <img src={image1} alt="#" />
+                                                    <button type="button">
+                                                        <img src={closeButton} alt="#" />
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div className="button-holder flex v-center">
+                                                <button type="button" className="back" onClick={() => {setStep1(true); setStep2(false); setStep3(false)}}>Back</button>
+                                                <button type="button" className="skip" onClick={() => {setStep1(false); setStep2(false); setStep3(true)}}>Skip</button>
+                                                <button type="button" className="next" onClick={() => {setStep1(false); setStep2(false); setStep3(true)}}>Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                {
+                                    step3 && !step1 && !step2 &&
+                                    <div className="form-step3">
+                                        <h2>Legal requirements</h2>
+                                        <p>Upload your legal documents to verify your identity.</p>
+                                        <div className="holder">
+                                            <div class="boxes-holder">
+                                                <h5>National identification card</h5>
+                                                <div className="boxes">
+                                                    <div className="box">
+                                                        <strong className="box-title">Front</strong>
+                                                        <input type="file" id="front" className="hidden" />
+                                                        <label htmlFor="front" className="flex v-center h-center">
+                                                            <span><em>Upload Photo</em> or just drag & drop</span>
+                                                        </label>
+                                                    </div>
+                                                    <div className="box">
+                                                        <strong className="box-title">Back</strong>
+                                                        <input type="file" id="back" className="hidden" />
+                                                        <label htmlFor="back" className="flex v-center h-center">
+                                                            <span><em>Upload Photo</em> or just drag & drop</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="file-size">
+                                                <div className="size-holder">
+                                                    <div className="progress" style={{width: "30%"}}>
+                                                        <span>30%</span>
+                                                    </div>
+                                                </div>
+                                                <div className="size-text">File size <b>12MB</b></div>
+                                            </div>
+                                            <div class="boxes-holder">
+                                                <div className="boxes">
+                                                    <div className="box">
+                                                        <strong className="box-title">Proof of address</strong>
+                                                        <input type="file" id="address-proof" className="hidden" />
+                                                        <label htmlFor="address-proof" className="flex v-center h-center">
+                                                            <span><em>Upload Photo</em> or just drag & drop</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div className="boxes">
+                                                    <div className="box">
+                                                        <strong className="box-title">Police clearance certificate</strong>
+                                                        <input type="file" id="police-clearance" className="hidden" />
+                                                        <label htmlFor="police-clearance" className="flex v-center h-center">
+                                                            <span><em>Upload Photo</em> or just drag & drop</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul className="list-none flex selected-docs">
+                                                <li className="flex v-center">
+                                                    <img src={docIcon} alt="#" />
+                                                    <span>NIC Front.pdf</span>
+                                                    <img src={deleteIcon} alt="#" className="ml-auto" />
+                                                </li>
+                                                <li className="flex v-center">
+                                                    <img src={docIcon} alt="#" />
+                                                    <span>NIC Back.pdf</span>
+                                                    <img src={deleteIcon} alt="#" className="ml-auto" />
+                                                </li>
+                                                <li className="flex v-center">
+                                                    <img src={docIcon} alt="#" />
+                                                    <span>Home Proof.pdf</span>
+                                                    <img src={deleteIcon} alt="#" className="ml-auto" />
+                                                </li>
+                                                <li className="flex v-center">
+                                                    <img src={docIcon} alt="#" />
+                                                    <span>Police clearance certificate.pdf</span>
+                                                    <img src={deleteIcon} alt="#" className="ml-auto" />
+                                                </li>
+                                            </ul>
+                                            <div className="button-holder flex v-center">
+                                                <button type="button" className="back" onClick={() => {setStep1(false); setStep2(true); setStep3(false); setStep4(false)}}>Back</button>
+                                                <button type="button" className="skip" onClick={() => {setStep1(false); setStep2(false); setStep3(false); setStep4(true)}}>Skip</button>
+                                                <button type="button" className="next" onClick={() => {setStep1(false); setStep2(false); setStep3(false); setStep4(true)}}>Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                {
+                                    step4 && !step1 && !step2 && !step3 &&
+                                    <div className="form-step4">
+                                        <h2>Review your service details</h2>
+                                        <p>Please review carefully your service details before submitting, you can edit your service details anytime from your account.</p>
+                                        <div className="holder">
+                                            <div class="holder-row">
+                                                <strong className="title">Projects</strong>
+                                                <ul className="list-none flex selected-files">
+                                                    <li>
+                                                        <img src={image1} alt="#" />
+                                                    </li>
+                                                    <li>
+                                                        <img src={image1} alt="#" />
+                                                    </li>
+                                                    <li>
+                                                        <img src={image1} alt="#" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="holder-row">
+                                                <strong className="title">Documents</strong>
+                                                <ul className="list-none flex selected-docs readonly">
+                                                    <li className="flex v-center">
+                                                        <img src={docIcon} alt="#" />
+                                                        <span>NIC Front.pdf</span>
+                                                    </li>
+                                                    <li className="flex v-center">
+                                                        <img src={docIcon} alt="#" />
+                                                        <span>NIC Back.pdf</span>
+                                                    </li>
+                                                    <li className="flex v-center">
+                                                        <img src={docIcon} alt="#" />
+                                                        <span>Home Proof.pdf</span>
+                                                    </li>
+                                                    <li className="flex v-center">
+                                                        <img src={docIcon} alt="#" />
+                                                        <span>Police clearance certificate.pdf</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="holder-row disabled">
+                                                <strong className="title">Other details</strong>
+                                                <div className="service-row flex">
+                                                    <div className="service-col">
+                                                        <span className="field-label">Mobile number</span>
+                                                        <input type="text" placeholder="Zip code" />
+                                                    </div>
+                                                    <div className="service-col">
+                                                        <span className="field-label">Email address</span>
+                                                        <input type="text" placeholder="Street address" />
+                                                    </div>
+                                                </div>
+                                                <div className="service-row flex">
+                                                    <div className="service-col">
+                                                        <span className="field-label">Zip code</span>
+                                                        <input type="text" placeholder="77001" />
+                                                    </div>
+                                                    <div className="service-col">
+                                                        <span className="field-label">Your address</span>
+                                                        <input type="text" placeholder="3401 Walnut St, Philadelphia 19104, Pennsylvania, United States" />
+                                                    </div>
+                                                </div>
+                                                <div className="service-row flex">
+                                                    <div className="service-col">
+                                                        <span className="field-label">Category</span>
+                                                        <input type="text" placeholder="House Cleaning" />
+                                                    </div>
+                                                    <div className="service-col">
+                                                        <span className="field-label">Title</span>
+                                                        <input type="text" placeholder="Gardner, Housekeeper" />
+                                                    </div>
+                                                </div>
+                                                <div className="service-row flex">
+                                                    <div className="service-col">
+                                                        <span className="field-label">Tags</span>
+                                                        <input type="text" placeholder="House Cleaning" />
+                                                    </div>
+                                                    <div className="service-col">
+                                                        <span className="field-label">Hourly budget</span>
+                                                        <input type="text" placeholder="$20.85 / hr" />
+                                                    </div>
+                                                </div>
+                                                <div className="service-row flex">
+                                                    <div className="service-col">
+                                                        <span className="field-label">Availability</span>
+                                                        <input type="text" placeholder="Full Time" />
+                                                    </div>
+                                                    <div className="service-col">
+                                                        <span className="field-label">Experience</span>
+                                                        <input type="text" placeholder="3 Years" />
+                                                    </div>
+                                                </div>
+                                                <div className="service-row flex desc">
+                                                    <strong className="title">Service description</strong>
+                                                    <p>CurrentFlow Solutions is a trusted provider of electricity problem-solving solutions, dedicated to helping homeowners and businesses overcome electrical challenges with expertise and efficiency. With a team of highly skilled electricians and technicians, we offer a wide range of services, including electrical troubleshooting, repairs, installations, and upgrades.</p>
+                                                    <p>With our technical expertise and customer-centric approach, we strive to ensure safe and efficient electricity usage while providing exceptional service and peace of mind to our valued customers.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div className="button-holder flex v-center">
+                                                <button type="button" className="back">Edit</button>
+                                                <input type="submit" className="next" value="Submit Request" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <div class="progress-card">
+                                    <div class="percent">
+                                        <svg>
+                                        <circle cx="105" cy="105" r="100"></circle>
+                                        <circle cx="105" cy="105" r="100" style={{"--percent": 30}}></circle>
+                                        </svg>
+                                        <div class="number">
+                                        <h3>33<span>%</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <button type="button" className="btn-close" onClick={() => setListService(false)}><img src={closeIcon} alt="#" /></button>
+                        </div>
+                    </div>
+                </div>
             }
         </>
     )

@@ -7,3 +7,11 @@ $('.slick-slider.banner').slick({
     slidesToScroll: 1,
     arrows: false,
 });
+$('.slick-slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+});

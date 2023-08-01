@@ -1,3 +1,4 @@
+import { closedEye, passIcon } from "../../utils/svgIcons"
 
 const ChangePassword = () => {
     return(
@@ -7,15 +8,21 @@ const ChangePassword = () => {
             </div>
             <form className="edit-form">
                 <div className="edit-row flex v-center">
-                    <div className="edit-col">
+                    <div className="edit-col ico-holder">
                         <input type="password" placeholder="Current Password" />
+                        <div className="input-ico left">{passIcon()}</div>
+                        <button type="button" className="input-ico">{closedEye()}</button>
                     </div>
-                    <div className="edit-col">
+                    <div className="edit-col ico-holder">
                         <input type="password" placeholder="New Password" />
+                        <div className="input-ico left">{passIcon()}</div>
+                        <button type="button" className="input-ico">{closedEye()}</button>
                     </div>
                 </div>
-                <div className="edit-row flex v-center">
+                <div className="edit-row flex v-center ico-holder">
                     <input type="password" placeholder="Confirm Password" />
+                    <div className="input-ico left">{passIcon()}</div>
+                    <button type="button" className="input-ico">{closedEye()}</button>
                 </div>
                 <div className="edit-row flex buttons">
                     <button type="button">Cancel</button>

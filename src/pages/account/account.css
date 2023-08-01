@@ -130,7 +130,7 @@
     background: rgba(81, 184, 234, 0.06);
     color: #2D9ACF;
     border: 1px solid #2D9ACF;
-    font-weight: 600;
+    font-family:'Hellix Semibold', sans-serif;
     font-size: 16px;
     border-radius: 4px;
     padding: 10px 10px;
@@ -153,4 +153,35 @@
 }
 .tab-content .loading {
     padding: 30px 0 60px;
+}
+
+@media(max-width:1200px){
+    .tabset li {
+        margin: 0 10px 10px 0;
+    }
+    .service-btns {
+        gap: 5px;
+    }
+    .service-btns li a{
+        min-width: 114px;
+    }
+    .table-holder .table-btn{
+        font-size: 13px;
+    }
+}
+@media(max-width:1000px){
+    .profile-card{
+        width:100%;
+    }
+    .profile-content {
+        padding: 20px 0 0;
+    }
+}
+@media (max-width:600px){
+    .single-card{
+        width:100% !important;
+    }
+    .table-holder {
+        overflow-x: auto;
+    }
 }

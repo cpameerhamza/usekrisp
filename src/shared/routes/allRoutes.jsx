@@ -3,6 +3,7 @@ import Pros from "../../pages/pros/Pros";
 import ProDetails from "../../pages/proDetails/ProDetails";
 import Account from "../../pages/account/Account";
 import JobDetails from "../../pages/jobDetails/jobDetails";
+import Contact from "../../pages/contact/Index";
 import {routeConstant} from "./routeConstant";
 
 
@@ -31,6 +32,11 @@ const commonRoute = [
     path: routeConstant.jobDetail.path,
     title: routeConstant.jobDetail.title,
     Component: JobDetails,
+  },
+  {
+    path: routeConstant.contact.path,
+    title: routeConstant.contact.title,
+    Component: Contact,
   },
 ];
 

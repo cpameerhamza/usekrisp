@@ -6,7 +6,9 @@
     height: 47px;
     font-weight: 600;
     font-size: 15px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    padding:0 20px 0 45px;
+    color: #6F7487;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -117,5 +119,6 @@
 
 /* Firefox */
 .auth-form .field-row.otp-boxes input[type=number] {
-  -moz-appearance: textfield;
+    padding:0 20px;
+    -moz-appearance: textfield;
 }

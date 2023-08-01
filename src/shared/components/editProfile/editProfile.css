@@ -8,10 +8,12 @@
     border: 1px solid rgba(2, 23, 76, 0.5);
     font-weight: 600;
     border-radius: 4px;
-    padding: 0 17px;
+    padding: 0 17px 0 45px;
     color: #222;
 }
-
+.edit-form .input-ico {
+    top: 13px;
+}
 .edit-form .edit-row {
     gap: 15px;
     margin: 0 0 15px;
@@ -25,6 +27,7 @@
 .edit-form .edit-row.buttons button,
 .edit-form .edit-row.buttons input[type="submit"] {
     width: 138px;
+    padding:0 17px;
     font-weight: 600;
     color:#02174C;
     background:rgba(2, 23, 76, 0.06);

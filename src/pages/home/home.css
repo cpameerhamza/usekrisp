@@ -1,8 +1,8 @@
-  .benefits {
+.benefits {
     margin: 0 0 70px;
   }
   .benefits h2 {
-    margin: 0 0 27px;
+    margin: 0 0 30px;
     font-size: 30px;
     line-height: 34px;
   }
@@ -13,7 +13,7 @@
     display: block;
     height: 298px;
     object-fit: cover;
-    margin: 0 0 16px;
+    margin: 0 0 15px;
   }
   
   .benefits .cols strong {
@@ -26,6 +26,9 @@
   .benefits .cols {
     gap: 16px;
   }
+  .benefits .cols .col {
+    width: calc(33.3% - 11px);
+}
   .claim .img-holder {
     width: 50%;
   }
@@ -45,16 +48,16 @@
   
   .claim .text {
     width: 44%;
-    padding: 37px 37px 0 0;
+    padding: 37px 22px 0 0;
   }
   
   .claim .text h2 {
-    margin: 0 0 23px;
+    margin: 0 0 25px;
     color: #02174C;
     font-size: 30px;
-    line-height: 38px;
+    line-height: 37px;
     font-weight: 700;
-    padding: 0 40px 0 0;
+    padding: 0 50px 0 0;
   }
   
   .claim .text p {
@@ -64,7 +67,7 @@
   }
   .claim .btn-primary {
     margin: 13px 0 0;
-    padding: 12px 16px;
+    padding: 13px 18px;
     display: inline-block;
     vertical-align: top;
   }
@@ -79,11 +82,11 @@
   .features h2 {
     text-align: center;
     font-size: 30px;
-    margin: 0 0 58px;
+    margin: 0 0 62px;
   }
   
   .features {
-    padding: 74px 0 82px;
+    padding: 71px 0 82px;
   }
   
   .features ul li {
@@ -99,14 +102,14 @@
   
   .features ul li strong {
     display: block;
-    font-size: 22px;
+    font-size: 21px;
     margin: 0 0 16px;
     color:#02174C;
   }
   
   .features ul li p {
     margin: 0;
-    font-size: 15px;
+    line-height: 23px;
   }
 
 
@@ -118,7 +121,7 @@
   }
 
   .promo {
-    padding: 127px 0 100px;
+    padding: 120px 0 100px;
 }
 
 .promo p {
@@ -129,23 +132,20 @@
     overflow: hidden;
     font-size: 16px;
     line-height: 26px;
-    margin: 0 0 60px;
+    margin: 0 0 63px;
 }
-
-
-
-
-
 
 .promo .twocols .column:first-child {
   width: 60%;
   margin-right: -115px;
 }
-
+.promo .twocols .column {
+  width: 49%;
+}
 .promo .twocols .holder {
   background: #fff;
   border-radius: 15px;
-  width: 610px;
+  /* width: 610px; */
   padding: 43px 97px;
   box-shadow: 11px 12px 17px -15px #7b7b7b;
 }
@@ -185,4 +185,179 @@
   font-size: 20px;
   margin: 0 0 6px;
   color:#02174C;
+}
+
+@media (max-width:1300px){
+  .promo .twocols .holder{
+      padding:23px 60px;
+  }
+}
+@media (max-width:1200px){
+  .benefits .cols img{
+    height: 230px;
+  }
+  .benefits {
+    margin: 0 0 40px;
+  }
+  .claim .text h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 0;
+}
+.claim .text p{
+  margin:0 0 17px;
+}
+.claim {
+  margin: 0 0 60px;
+}
+.promo {
+  padding: 40px 0;
+}
+.promo .twocols .holder {
+    padding: 20px 40px;
+    box-shadow: 0 0 10px 0px #7b7b7b;
+}
+.banner .text {
+  padding: 160px 0 0 !important;
+}
+.promo .twocols ul .inner strong{
+  font-size: 19px;
+}
+}
+
+@media(max-width:1000px){
+  .benefits .cols img {
+    height: 170px;
+}
+.benefits h2 {
+  margin: 0 0 30px;
+  font-size: 25px;
+  line-height: 30px;
+}
+.benefits .cols strong{
+  font-size:17px;
+}
+.claim .text {
+  width: 46%;
+  padding: 0 22px 0 0;
+}
+.features {
+  padding: 20px 0;
+}
+.features h2 {
+  margin: 0 0 40px;
+}
+.features ul li strong {
+  font-size: 16px;
+}
+.promo .twocols .column:first-child{
+  display: none;
+}
+.promo .twocols .column{
+  width:100%;
+}
+.schedule-text .text h2 {
+  font-size: 25px;
+  line-height: 35px;
+}
+#footer {
+  padding: 40px 0 0;
+}
+#footer .text {
+  width: 260px !important;
+}
+#footer .cols ul li {
+  margin: 0 0 16px !important;
+}
+#footer .socials {
+  margin: 20px 0 0;
+}
+}
+
+@media(max-width:767px){
+  .banner h1 {
+    font-size: 30px;
+    line-height: 37px;
+}
+.benefits .cols .col{
+  width: calc(50% - 8px);
+}
+.claim .img-holder{
+  width:100%;
+}
+.claim .text {
+  width: 100%;
+  padding: 20px 0 0;
+}
+.features ul li{
+  width:50%;
+  padding:0 15px 10px;
+}
+.schedule-text .text {
+  padding: 10px 15px !important;
+}
+.schedule-text .text h2 {
+  margin: 0 0 20px !important;
+  font-size: 25px !important;
+  line-height: 30px !important;
+}
+.promo .twocols ul .ico{height:61px;}
+#footer .text{
+  width:100% !important;
+}
+#footer .cols {
+  width: 100% !important;
+  padding-top:25px;
+}
+.schedule-text .btn-primary {
+  padding: 14px 20px;
+}
+.logo img {
+  width: 130px;
+}
+#header .btn-primary {
+  padding: 10px 10px 14px;
+}
+#header ul {
+  margin-right: 20px;
+}
+#header ul li {
+  margin-left: 14px;
+ }
+}
+
+@media(max-width:480px){
+.benefits .cols .col{
+  width: 100%;
+}
+.benefits .cols img {
+  height: 58vw;
+}
+.features ul li{
+  width:100%;
+}
+.promo h2 {
+  margin: 0 0 25px;
+  font-size: 26px;
+  line-height: 31px;
+}
+.promo .twocols .holder h3{
+  font-size: 20px;
+}
+.promo .twocols .holder {
+  padding: 20px;
+}
+.promo .twocols ul li {
+  flex-direction: column;
+  text-align: center;
+}
+.promo .twocols ul li span {
+  display: none;
+}
+.promo .twocols .holder h3 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 22px;
+}
 }

@@ -1,4 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@font-face {
+  font-family: 'Hellix';
+  src: url('./fonts/Hellix-Regular.eot');
+  src: local('Hellix Regular'), local('Hellix-Regular'),
+      url('./fonts/Hellix-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Hellix-Regular.woff2') format('woff2'),
+      url('./fonts/Hellix-Regular.woff') format('woff'),
+      url('./fonts/Hellix-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hellix Semibold';
+  src: url('./fonts/Hellix-SemiBold.eot');
+  src: local('Hellix SemiBold'), local('Hellix-SemiBold'),
+      url('./fonts/Hellix-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Hellix-SemiBold.woff2') format('woff2'),
+      url('./fonts/Hellix-SemiBold.woff') format('woff'),
+      url('./fonts/Hellix-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +30,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font: 14px/1.4 "Urbanist", sans-serif;
+  font: 14px/1.4 "Hellix", sans-serif;
   color: #6F7487;
   background: #fff;
 }
@@ -30,7 +51,19 @@ img {
   max-width: 100%;
   display: block;
 }
-
+.ico-holder{position: relative;}
+.input-ico {
+  position: absolute;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background: no-repeat;
+  top: 16px;
+}
+.input-ico.left {
+  right:auto;
+  left:20px;
+}
 .img-responsive {
   width: 100%;
 }
@@ -42,7 +75,7 @@ img {
 input,
 textarea,
 button {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Hellix", sans-serif;
   outline: none;
 }
 
@@ -139,7 +172,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Hellix Semibold", sans-serif;
   color:#02174C;
 }
 
@@ -149,30 +182,38 @@ h6 {
   overflow: hidden;
 }
 .container {
-  max-width: 1239px;
+  max-width: 1269px;
   margin: 0 auto;
+  padding:0 15px;
 }
-
+#header .btn-primary {
+  font-family: 'Hellix Semibold', sans-serif;
+}
 .btn-primary {
   background: #0AF886;
   color: #02174C;
   text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 14px 18px;
+  padding: 15px 25px;
   border-radius: 4px;
   border:none;
+  font-family: 'Hellix Semibold', sans-serif;
 }
+.service-btn{
+  width:100%;
+  margin:0 0 20px;
+  font-size: 15px;
+}
+
 .btn-default {
   height:46px;
   background: #0AF886;
   color: #02174C;
   text-align: center;
   font-size: 16px;
-  font-weight: 600;
   padding: 14px 18px;
   border-radius: 4px;
   border:none;
+  font-family: 'Hellix Semibold', sans-serif;
 }
 .fancy-checkbox {
   position: relative;

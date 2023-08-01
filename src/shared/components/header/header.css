@@ -1,10 +1,18 @@
 #header {
     padding: 25px 0;
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
   }
+  .profile-list {
+    font-weight: 600;
+  }
+  .profile-list a {
+    color: #02174C;
+    margin: 0 6px 0 0;
+  }
+  .profile-list img {margin: 0 11px 0 0;}
   #header ul {
     margin-right: 32px;
   }
@@ -28,4 +36,146 @@
     top: -4px;
     font-size: 13px;
     line-height: 16px;
+  }
+  
+
+  #header .dropdown {
+    left: 0;
+    top: 100%;
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 7px;
+    position: absolute;
+    z-index: 1;
+    width: 432px;
+    box-shadow: 0 0 11px -1px #dad9d9;
+}
+
+#header .dropdown img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+#header .dropdown ul{margin:0;}
+#header .dropdown h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+#header .dropdown li {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 7px;
+}
+#header .dropdown li.just-now {
+  background: rgba(10, 248, 134, 0.06);
+}
+#header .dropdown li strong {
+    color: #222;
+}
+
+#header .dropdown li strong span {
+    font-weight: 400;
+    color: #6F7487;
+}
+
+#header .dropdown .text .txt{
+    width: 70%;
+}
+#header .dropdown .text {
+  flex: 1;
+  display: flex;
+}
+#header .dropdown .text .time{
+  margin-left:auto;
+}
+#header .dropdown .buttons button {
+  border-radius: 4px;
+  background: #02174C;
+  color: #fff;
+  font-size: 13px;
+  width: 72px;
+  height: 28px;
+  margin-right: 6px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .dropdown .buttons .reject {background:#EA5167;}
+#header .dropdown .buttons {
+  margin: 10px 0 0;
+  display: flex;
+}
+.user-dropdown {
+  background: #fff;
+  border: 1px solid rgba(2, 23, 76, 0.2);
+  border-radius: 4px;
+  width: 172px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+}
+
+#header .user-dropdown ul {
+  margin: 0;
+}
+
+#header .user-dropdown ul li {
+  margin: 0;
+}
+
+#header .user-dropdown ul a {
+  color: #222;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#header .user-dropdown ul button,
+#header .user-dropdown ul .logout-btn {
+  padding: 15px 20px;
+  color: #EA5167;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#header .user-dropdown ul button:hover,
+#header .user-dropdown ul a:hover{
+  background:rgba(10, 248, 134, 0.06);
+}
+
+@media(max-width:1000px){
+  #header .dropdown {
+    width: 400px;
+    left: -180px;
+}
+}
+@media(max-width:600px){
+  #header .dropdown {
+    width: 300px;
+    left:auto;
+    right:0;
+    padding: 10px;
+}
+}
+  @media(max-width:480px){
+    #header ul li:last-child, #header .btn-primary {
+      display: none;
+  }
+  #header .dropdown {
+    left:auto;
+    right:-86px;
+  }
   }

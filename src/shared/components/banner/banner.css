@@ -9,7 +9,7 @@
   .banner .text {
     max-width: 827px;
     margin: 0 auto;
-    padding: 206px 0 0;
+    padding: 194px 0 0;
     text-align: center;
   }
   .banner.small .text {
@@ -18,7 +18,7 @@
   .banner h1 {
     margin: 0;
     font-size: 60px;
-    line-height: 64px;
+    line-height: 72px;
   }
   .banner.small h1 {
     font-size: 30px;
@@ -36,4 +36,54 @@
     -moz-transform: translate(-50%, 0);
     background:url('../../../assets/lines.png') no-repeat 50% 100%;
     background-size: 100% 100%;
+  }
+
+  .big-banner{
+    height:967px;
+    background:url("../../../assets/big-banner.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .big-banner .banner {
+    text-align: center;
+    background: none;
+    padding: 140px 110px 0;
+}
+.big-banner .form-holder {
+  margin: 30px auto 0;
+}
+
+
+
+  @media(max-width:1000px){
+    .banner h1 {
+      font-size: 40px;
+      line-height: 47px;
+  }
+  .banner h1 span:after{
+    bottom:-11px;
+  }
+  .banner{
+    height:348px;
+  }
+  }
+  @media(max-width:400px){
+    .banner {
+      height: 268px;
+  }
+    .banner h1 {
+      font-size: 28px;
+      line-height: 33px;
+  }
+  .banner .text {
+    padding: 110px 0 0 !important;
+}
+  }
+
+  @media (max-width:480px){
+    .banner h1 span:after {
+      bottom: -4px;
+      width: 150px;
+      height: 10px;
+  }
   }

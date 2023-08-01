@@ -4,7 +4,8 @@
 }
 
 .pro-details {
-    padding: 37px 0 0;
+    /* padding: 37px 0 0; */
+    padding:137px 0 0;
 }
 
 .rating-holder {
@@ -449,4 +450,474 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Subscription popup styles */
+.card-steps label {
+    border: 1px solid rgba(2, 23, 76, 0.2);
+    border-radius: 4px;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    margin: 0 0 15px;
+    position: relative;
+}
+
+.card-steps label p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-steps h3 {
+    margin: 0;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.card-steps strong {
+    color: #02174C;
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: block;
+}
+.card-steps input[type="radio"]:checked + label {
+    border-color: #02174C;
+}
+.card-steps input[type="radio"]:checked + label .checked {
+    display: block !important;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.popup .plan-price h2 span {
+    font-size: 14px;
+    color: #6F7487;
+}
+
+.popup h2 span {
+    color: #6F7487;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popup .btn-area button {
+    margin-left: auto;
+    background: #02174C;
+    color: #fff;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.card-ico {
+    width: 58px;
+    height: 58px;
+    border-radius: 8px;
+    background: rgba(111, 116, 135, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.popup .add-holder {
+    margin: 22px 0 30px;
+}
+.popup .add-holder button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0AF886;
+    gap: 12px;
+    background:none;
+    padding:0;
+    border:none;
+}
+.popup .btn-area button.fluid {
+    width: 100%;
+    margin: 0;
+}
+.popup .add-card input {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid rgba(2, 23, 76, 0.2);
+    border-radius: 4px;
+    margin: 0 0 14px;
+    padding: 0 47px;
+    font-weight: 500;
+}
+.popup .add-card .input-ico {
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 4px;
+}
+/* List service popup */
+.service-row {
+    gap: 15px;
+    margin: 0 0 20px;
+}
+
+.service-row .service-col {
+    width: calc(50% - 8px);
+}
+.service-row .service-col.ico-holder input {
+    padding-left: 45px;
+}
+.service-row .service-col.ico-holder .input-ico {
+    top: 13px;
+}
+.service-row input, .service-row select, .service-row textarea {
+    width: 100%;
+    border: 1px solid rgba(2, 23, 76, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color:#6F7487;
+}
+.service-row select{
+    background:url("../../assets/dropdown-ico.png") no-repeat 98% 50%;
+}
+.radios-holder label {
+    color: #02174C;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 14px;
+}
+
+.radios-holder {
+    gap: 15px;
+}
+.radios-holder input[type="radio"]:checked + label {
+    background: #0AF886;
+}
+.service-row strong {
+    color: #222;
+    font-size: 16px;
+    margin: 30px 0 10px;
+    display: block;
+}
+.service-row textarea {
+    height: 160px;
+    resize: none;
+    padding: 10px 20px;
+}
+.popup .service-form .holder {
+    padding: 30px 0;
+}
+.service-form .button-holder {
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+.service-form .button-holder button,
+.service-form .button-holder input[type="submit"] {
+    background: #02174C;
+    border-radius: 4px;
+    border: 1px solid #02174C;
+    color: #fff;
+    font-weight: 500;
+    padding: 14px 50px;
+    font-size: 15px;
+}
+.service-form .button-holder button {
+    background:rgba(2, 23, 76, 0.06);
+    color:#02174C;
+}
+.service-form .button-holder button.skip {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #6F7487;
+}
+.service-row input.other-field {
+    flex: 1;
+}
+.popup h2 em {
+    font-style: normal;
+    color: #0AF886;
+    font-weight: 300;
+    font-family: 'Hellix';
+}
+
+.boxes .box label {
+    width: 100%;
+}
+
+.boxes {
+    margin:0 0 60px;
+    display: flex;
+    gap: 15px;
+}
+
+.boxes .box {
+    flex:1;
+}
+
+.boxes label, .boxes textarea {height: 140px;border: 1px dashed rgba(2, 23, 76, 0.2);border-radius: 4px;}
+
+.boxes textarea {
+    width: 100%;
+    border-style: solid;
+    resize: none;
+    padding: 11px 20px;
+    font-weight: 500;
+}
+
+.boxes .box label span {
+    width: 148px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.boxes .box label span em {
+    font-style: normal;
+    color: #0AF886;
+}
+.size-holder {
+    height: 4px;
+    background: rgba(2, 23, 76, 0.2);
+    border-radius: 30px;
+    position: relative;
+}
+
+.size-holder .progress {
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+    background: #02174C;
+    height: 100%;
+}
+
+.size-holder .progress span {
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 12px;
+    position: absolute;
+    bottom: 13px;
+    right: -21px;
+}
+.size-holder .progress span:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    position: absolute;
+    bottom: -5px;
+    left: 14px;
+    z-index: 1;
+    content: '';
+}
+.size-text {
+    margin: 12px 0 0;
+}
+.service-form .button-holder button.next {
+    background: #02174C;
+    color: #fff;
+}
+.service-form .btn {
+    display: flex;
+    margin: 12px 0 30px;
+}
+
+.service-form .btn button {
+    padding: 14px 24px;
+    font:600 14px/18px 'Hellix', sans-serif;
+}
+
+.selected-files img {
+    width: 110px;
+    height: 110px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.selected-files li {
+    position: relative;
+}
+.selected-files button {
+    background: none;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.selected-files button img {
+    width: 24px;
+    height: 24px;
+}
+.selected-files {
+    gap: 10px;
+    margin: 0 0 30px;
+}
+.boxes .box-title {
+    color: #222;
+    display: block;
+    margin: 0 0 10px;
+}
+.boxes-holder h5 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+.selected-docs {
+    gap: 10px;
+}
+.selected-docs.readonly {
+    margin: 20px 0;
+}
+.selected-docs li {
+    margin:0 0 10px;
+    border: 1px solid rgba(2, 23, 76, 0.2);
+    border-radius: 4px;
+    width: calc(50% - 5px);
+    background: rgba(2, 23, 76, 0.04);
+    padding: 5px 17px;
+}
+
+.selected-docs li span {
+    padding: 0 14px;
+    color:#222;
+    font-weight: 600;
+}
+.holder-row .title {
+    color: #02174C;
+    font-size: 20px;
+    margin: 0 0 15px;
+    display: block;
+}
+.selected-docs.readonly li {
+    border: none;
+    padding: 0;
+    background: none;
+    width: auto;
+}
+.field-label {
+    display: block;
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+.selected-holder .title {
+    color: #02174C;
+    font-size: 20px;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.selected-docs.readonly li {
+    border: none;
+    padding: 0;
+    background: none;
+    width: auto;
+}
+
+span.field-label {
+    display: block;
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 9px;
+}
+
+.disabled .service-row input {
+    padding: 0;
+    height: auto;
+    border: none;
+    color: #6F7487;
+    pointer-events: none;
+    cursor: default;
+    font-size: 16px;
+    font-weight: 500;
+}
+.service-row.desc p {
+    margin: 0;
+}
+/* Progressbar starts */
+.progress-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    transform: scale(0.5);
+  }
+  
+  .progress-card .percent {
+    position: relative;
+  }
+  
+  .progress-card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+  }
+  
+  .progress-card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #02174C;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+  
+  .progress-card svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+    stroke: #0AF886;
+  }
+  
+  .progress-card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-card .number h3 {
+    font-weight: 200;
+    font-size: 3.5rem;
+  }
+  
+  .progress-card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+  }
+  
+  .progress-card:nth-child(2) svg circle:last-of-type {
+    stroke: #2ecc71;
+  }
+/* Progressbar ends */
+@media(max-width:480px){
+    .pro-details {
+        padding: 97px 0 0;
+    }
+    .reviews-list header>img {
+        width: 56px;
+        height: 56px;
+    }
+    .reviews-list .text {
+        flex: 1;
+    }
+    .reviews-list strong span{
+        display: block;
+        margin:0 !important;
+    }
+    .reviews-list {
+        margin: 0 0 30px;
+    }
 }

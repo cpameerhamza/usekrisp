@@ -19,5 +19,9 @@ const routeConstant = {
     path: "/pro-details",
     title: "Pro Detail",
   },
+  contact: {
+    path: "/contact",
+    title: "Contact Support",
+  },
 };
 export { routeConstant };

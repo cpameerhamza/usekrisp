@@ -11,8 +11,11 @@ import icon4 from "../../assets/ico4.png";
 import icon5 from "../../assets/ico5.png";
 import icon6 from "../../assets/ico6.png";
 import icon7 from "../../assets/ico7.png";
+import image15 from "../../assets/img15.png";
+import image16 from "../../assets/img16.png";
 import Promo from "../../shared/components/promo/Promo";
 import Banner from "../../shared/components/banner/Banner";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return(
@@ -22,15 +25,36 @@ const Home = () => {
                 <Banner title={["Unlock Your ", <span>Business</span>,  " Potential with Usekrisp"]} small={false} />
                 <div className="form-holder">
                     <form>
-                        <select>
-                            <option>Write keyword</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
+                        <input type="text" placeholder="Write keyword" className="keyword" />
                         <input type="text" placeholder="Zip code" />
                         <input type="submit" value="Search" />
                     </form>
                 </div>
+                {/* <div className="big-banner">
+                    <div className="container banner">
+                        <h1>Your <span>one-stop</span> directory for home service professionals</h1>
+                        <div className="form-holder">
+                            <form>
+                                <input type="text" placeholder="I need help for..." className="keyword" />
+                                <input type="text" placeholder="Zip code" />
+                                <input type="submit" value="Find Pros" />
+                            </form>
+                        </div>
+                    </div>
+                </div> */}
+                {/* <div className="services-sliders">
+                    <div className="container">
+                        <h2>Explore a wide range of home services</h2>
+                        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                            <div><h3>1</h3></div>
+                            <div><h3>2</h3></div>
+                            <div><h3>3</h3></div>
+                            <div><h3>4</h3></div>
+                            <div><h3>5</h3></div>
+                            <div><h3>6</h3></div>
+                        </div>
+                    </div>
+                </div> */}
                 <div className="benefits">
                     <div className="container">
                     <h2>Benefits of being a part of our network</h2>
@@ -40,11 +64,11 @@ const Home = () => {
                             <strong>Reach more quality customers</strong>
                         </div>
                         <div className="col">
-                            <img src={image} alt="#" />
+                            <img src={image15} alt="#" />
                             <strong>Power your business on the go</strong>
                         </div>
                         <div className="col">
-                            <img src={image} alt="#" />
+                            <img src={image16} alt="#" />
                             <strong>Maximize your earnings</strong>
                         </div>
                     </div>
